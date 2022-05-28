@@ -72,7 +72,6 @@ int main() {
 	GetMessage(&msg, NULL, NULL, NULL); 
 	//메세지큐에서 메세지를 읽음 
 	//메세지가 WM_QUIT일 경우 프로그램을 종료하라는 의미이므로 False를 반환 
-	//오지랖 : while문과 함께 사용 시 프로그램종료 시까지 메세지큐에 있는 메세지를 읽을 수 있음
 	UnHook(); 
 
 }
